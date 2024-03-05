@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+@media (min-width: 320px) and (max-width: 767px){
+body .login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("./../assets/ef2e9e28ee33b7eac7d47284cf28b176.png")
+}   
+
+.login input{ 
+    padding: 15px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    border-radius: 4px;
+    transition: all linear 160ms;
+    outline: none;   
+}
+.login input:hover{
+border: 2px solid #f72585;
+}
+.login p{
+display: inline-block;
+font-size: 14px;
+color: #ffffff;
+margin-bottom: 25px;
+}
+.login h1{
+padding: 0;
+margin: 0;
+font-weight: 500;
+font-size: 2.3em;
+color: #ffffff;
+}
+.result {
+font-size: 15vh;
+font-weight: 600;
+border: none ;
+transition: all linear 160ms;
+cursor: pointer;
+margin: 0;
+position: relative;
+right: 0px;
+bottom: 30px;
+}
+.result:hover {
+transform: scale(1.05);
+background-color: #15ff00;
+}
+#res{
+    position: relative;
+    right: 7px;
+    color: #ffffff;
+}
+#cad{
+    position: relative;
+    right: 130px;
+    top: 40px;
+    color: #ffffff;
+}
+#user{
+    position: relative;
+    right: 130px;
+    top: 40px;
+    color: #ffffff;
+}
+}
+@media (min-width: 768px) and (max-width: 1300px){
+       nav{
+        width: 100vw;
+        height: 100vh;
+        left: 100vh;
+        bottom: 100vw;
+        background-image: url("./../assets/Full-Body-Intricately-Hyper-Detailed-4K-Long-Mermaid-Tail-Realistic-53504651-1.png");
+    }  
+    .login{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        width: 50vw;
+        height: 100vh;
+        left: 50vh;
+        bottom: 50vw;
+        background-color: black;
+        border: 12px solid #ffffff;
+    } 
+    .login input{ 
+        padding: 15px;
+        font-size: 14px;
+        border: 1px solid #ccc;
+        margin-bottom: 20px;
+        margin-top: 5px;
+        border-radius: 4px;
+        transition: all linear 160ms;
+        outline: none;   
+    }
+    .login input:hover{
+    border: 2px solid #f72585;
+    }
+    .login p{
+    display: inline-block;
+    font-size: 14px;
+    color:#ffffff;
+    margin-bottom: 25px;
+    }
+    .login h1{
+    padding: 0;
+    margin: 0;
+    font-weight: 500;
+    font-size: 2.3em;
+    color: #ffffff;
+    }
+    .result {
+    font-size: 15vh;
+    font-weight: 600;
+    border: none ;
+    transition: all linear 160ms;
+    cursor: pointer;
+    margin: 0;
+    position: relative;
+    right: 0px;
+    bottom: 30px;
+    }
+    .result:hover {
+    transform: scale(1.05);
+    background-color: #15ff00;
+    }
+    #res{
+        position: relative;
+        right: 7px;
+        color:#ffffff;
+    }
+    #cad{
+        position: relative;
+        right: 130px;
+        top: 40px;
+        color: #ffffff;
+    }
+    #user{
+        position: relative;
+        right: 130px;
+        top: 40px;
+        color: #ffffff;
+    }
+}
+@media (min-width: 1301px){
+    nav{
+     width: 100vw;
+     height: 100vh;
+     left: 100vh;
+     bottom: 100vw;
+     background-image: url("./../assets/Full-Body-Intricately-Hyper-Detailed-4K-Long-Mermaid-Tail-Realistic-53504651-1.png");
+ }  
+ .login{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     align-content: center;
+     justify-content: center;
+     width: 50vw;
+     height: 100vh;
+     left: 50vh;
+     bottom: 50vw;
+     background-color: black;
+     border: 12px solid #ffffff;
+ } 
+ .login input{ 
+     padding: 2px;
+     font-size: 34px;
+     border: 1px solid #ccc;
+     margin-bottom: 20px;
+     margin-top: 5px;
+     border-radius: 4px;
+     transition: all linear 160ms;
+     outline: none;   
+ }
+ .login input:hover{
+ border: 2px solid #f72585;
+ }
+ .login p{
+ display: inline-block;
+ font-size: 34px;
+ color:#ffffff;
+ margin-bottom: 25px;
+ }
+ .login h1{
+ padding: 0;
+ margin: 0;
+ font-weight: 500;
+ font-size: 5.3em;
+ color: #ffffff;
+ }
+ .result {
+ font-size: 20vh;
+ font-weight: 600;
+ border: none ;
+ transition: all linear 160ms;
+ cursor: pointer;
+ margin: 0;
+ position: relative;
+ right: 0px;
+ bottom: 30px;
+ }
+ .result:hover {
+ transform: scale(1.05);
+ background-color: #15ff00;
+ }
+ #res{
+     position: relative;
+     right: 7px;
+     color:#ffffff;
+ }
+ #cad{
+     position: relative;
+     right: 160px;
+     top: 40px;
+     color: #ffffff;
+ }
+ #user{
+     position: relative;
+     right: 130px;
+     top: 40px;
+     color: #ffffff;
+ }
+}
