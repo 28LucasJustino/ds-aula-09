@@ -1,18 +1,23 @@
+*{
+  box-sizing: border-box;
+}
 body{
     margin: 0;
     padding: 0;
 }
   .site{
     width: 100vw;
+    height: 9vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     background-color: rgb(6, 10, 206);
+    box-shadow: 0 12px 10px rgb(129, 127, 126) ;
 }
 
-.logo img{
-  width: 20vw;
+.logo .img1{
+  width: 25vw;
   position: relative;
-  bottom: 20px;
+  bottom: 35px;
   right: 0px;
  
 }
@@ -20,26 +25,121 @@ body{
 .icon1 #ic1{
     border: none;
     position: relative;
-    top: 0px;
-    left: 0px;
+    top: 45px;
+    right: 75px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: transparent;
 }
 
 .icon1  #ic2{
     border: none;
     position: relative;
-    top: 20px;
-    left: 0px;
+    bottom: 20px;
+    right: 70px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: transparent;
 }
 
 .categoria #ic3{
     border: none;
     position: relative;
-    top: 0px;
-    left: 0px;
+    top: 35px;
+    right: 70px;
+    font-size: 35px;
+    cursor: pointer;
+    background-color: transparent;
 }
 
 .busca #inputBusca{
     position: relative;
-    top: 0px;
-    left: 0px;
+    top: 45px;
+    right: 45px;
+    font-size: 17px;
+}
+#inputBusca{
+    border: 1px solid #f72585;
+}
+@media (min-width: 375px) and (max-width: 480px){
+    .logo .img1 {
+        width: 20vw;
+        position: relative;
+        bottom: 30px;
+        left: 140px;
+    }
+    .categoria #ic3{
+        border: none;
+        position: relative;
+        top: 10px;
+        right: 95px;
+        font-size: 40px;
+        cursor: pointer;
+        background-color: transparent;
+    }
+    .icon1  #ic2{
+        border: none;
+        position: relative;
+        bottom: 30px;
+        right: 100px;
+        font-size: 25px;
+        cursor: pointer;
+        background-color: transparent;
+    }
+    .busca #inputBusca{
+        position: relative;
+        top: 38px;
+        right: 55px;
+        font-size: 20px;
+    }
+    .icon1 #ic1{
+        border: none;
+        position: relative;
+        top: 37px;
+        right: 85px;
+        font-size: 25px;
+        cursor: pointer;
+        background-color: transparent;
+    }
+}
+@media (min-width: 481x) and (max-width: 980px){
+    .logo .img1 {
+        width: 35vw;
+        position: relative;
+        bottom: 50px;
+        left: 140px;
+    }
+    .categoria #ic3{
+        border: none;
+        position: relative;
+        top: 10px;
+        right: 125px;
+        font-size: 55px;
+        cursor: pointer;
+        background-color: transparent;
+    }
+    .icon1  #ic2{
+        border: none;
+        position: relative;
+        bottom: 30px;
+        right: 120px;
+        font-size: 25px;
+        cursor: pointer;
+        background-color: transparent;
+    }
+    .busca #inputBusca{
+        position: relative;
+        top: 38px;
+        right: 115px;
+        font-size: 20px;
+    }
+    .icon1 #ic1{
+        border: none;
+        position: relative;
+        top: 37px;
+        right: 115px;
+        font-size: 25px;
+        cursor: pointer;
+        background-color: transparent;
+    }
 }
