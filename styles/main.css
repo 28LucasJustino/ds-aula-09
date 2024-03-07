@@ -1,235 +1,138 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+body{
     margin: 0;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 0;
+    font-family: "Roboto Condensed", sans-serif;
 }
-@media (min-width: 320px) and (max-width: 767px){
-body .login{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
+
+body *{
+    box-sizing: border-box;
+}
+.login{
     width: 100vw;
     height: 100vh;
-    background-image: url("./../assets/ef2e9e28ee33b7eac7d47284cf28b176.png")
-}   
+    background-image: url(./../assets/ef2e9e28ee33b7eac7d47284cf28b176.png) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left-login{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
-.login input{ 
+.left-login > h1{
+    color: rgb(6, 108, 192);
+    font-size: 3vw;
+}
+
+.imagem{
+    width: 35vw;
+}
+
+.right-login{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-login{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background-color: rgb(3, 46, 82) ;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px rgb(90, 87, 87) ;
+}
+.card-login > h1{
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+    margin: 0;
+}
+.textfield{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.textfield > input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
     padding: 15px;
-    font-size: 14px;
-    border: 1px solid #ccc;
-    margin-bottom: 20px;
-    margin-top: 5px;
-    border-radius: 4px;
-    transition: all linear 160ms;
-    outline: none;   
+    background-color: rgb(1, 17, 31);
+    color: aliceblue;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px rgb(90, 87, 87) ;
+    outline: none;
+    box-sizing: border-box;
 }
-.login input:hover{
-border: 2px solid #f72585;
+.textfield > input:hover{
+    border: 1px solid #f72585;
 }
-.login p{
-display: inline-block;
-font-size: 14px;
-color: #ffffff;
-margin-bottom: 25px;
+
+.textfield > label{
+    color: aliceblue;
+    margin-bottom: 10px;
 }
-.login h1{
-padding: 0;
-margin: 0;
-font-weight: 500;
-font-size: 2.3em;
-color: #ffffff;
+
+.textfield > input::placeholder{
+    color: aliceblue;
 }
-.result {
-font-size: 15vh;
-font-weight: 600;
-border: none ;
-transition: all linear 160ms;
-cursor: pointer;
-margin: 0;
-position: relative;
-right: 0px;
-bottom: 30px;
-}
-.result:hover {
-transform: scale(1.05);
-background-color: #15ff00;
-}
-#res{
-    position: relative;
-    right: 7px;
-    color: #ffffff;
-}
-#cad{
-    position: relative;
-    right: 130px;
-    top: 40px;
-    color: #ffffff;
-}
-#user{
-    position: relative;
-    right: 130px;
-    top: 40px;
-    color: #ffffff;
-}
-}
-@media (min-width: 768px) and (max-width: 1300px){
-       nav{
-        width: 100vw;
-        height: 100vh;
-        left: 100vh;
-        bottom: 100vw;
-        background-image: url("./../assets/Full-Body-Intricately-Hyper-Detailed-4K-Long-Mermaid-Tail-Realistic-53504651-1.png");
-    }  
-    .login{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        align-content: center;
-        justify-content: center;
-        width: 50vw;
-        height: 100vh;
-        left: 50vh;
-        bottom: 50vw;
-        background-color: black;
-        border: 12px solid #ffffff;
-    } 
-    .login input{ 
-        padding: 15px;
-        font-size: 14px;
-        border: 1px solid #ccc;
-        margin-bottom: 20px;
-        margin-top: 5px;
-        border-radius: 4px;
-        transition: all linear 160ms;
-        outline: none;   
-    }
-    .login input:hover{
-    border: 2px solid #f72585;
-    }
-    .login p{
-    display: inline-block;
-    font-size: 14px;
-    color:#ffffff;
-    margin-bottom: 25px;
-    }
-    .login h1{
-    padding: 0;
-    margin: 0;
-    font-weight: 500;
-    font-size: 2.3em;
-    color: #ffffff;
-    }
-    .result {
-    font-size: 15vh;
-    font-weight: 600;
-    border: none ;
-    transition: all linear 160ms;
+
+.btnLogin{
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: rgb(3, 46, 82);
+    background-color: rgb(255, 255, 255);
     cursor: pointer;
-    margin: 0;
-    position: relative;
-    right: 0px;
-    bottom: 30px;
-    }
-    .result:hover {
+    box-shadow: 0 10px 40px -12px rgb(2, 163, 10);
+}
+.btnLogin:hover{
     transform: scale(1.05);
     background-color: #15ff00;
-    }
-    #res{
-        position: relative;
-        right: 7px;
-        color:#ffffff;
-    }
-    #cad{
-        position: relative;
-        right: 130px;
-        top: 40px;
-        color: #ffffff;
-    }
-    #user{
-        position: relative;
-        right: 130px;
-        top: 40px;
-        color: #ffffff;
+
+}
+@media (max-width: 950px){
+    .card-login{
+        width: 85%;
     }
 }
-@media (min-width: 1301px){
-    nav{
-     width: 100vw;
-     height: 100vh;
-     left: 100vh;
-     bottom: 100vw;
-     background-image: url("./../assets/Full-Body-Intricately-Hyper-Detailed-4K-Long-Mermaid-Tail-Realistic-53504651-1.png");
- }  
- .login{
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     align-content: center;
-     justify-content: center;
-     width: 50vw;
-     height: 100vh;
-     left: 50vh;
-     bottom: 50vw;
-     background-color: black;
-     border: 12px solid #ffffff;
- } 
- .login input{ 
-     padding: 2px;
-     font-size: 34px;
-     border: 1px solid #ccc;
-     margin-bottom: 20px;
-     margin-top: 5px;
-     border-radius: 4px;
-     transition: all linear 160ms;
-     outline: none;   
- }
- .login input:hover{
- border: 2px solid #f72585;
- }
- .login p{
- display: inline-block;
- font-size: 34px;
- color:#ffffff;
- margin-bottom: 25px;
- }
- .login h1{
- padding: 0;
- margin: 0;
- font-weight: 500;
- font-size: 5.3em;
- color: #ffffff;
- }
- .result {
- font-size: 20vh;
- font-weight: 600;
- border: none ;
- transition: all linear 160ms;
- cursor: pointer;
- margin: 0;
- position: relative;
- right: 0px;
- bottom: 30px;
- }
- .result:hover {
- transform: scale(1.05);
- background-color: #15ff00;
- }
- #res{
-     position: relative;
-     right: 7px;
-     color:#ffffff;
- }
- #cad{
-     position: relative;
-     right: 160px;
-     top: 40px;
-     color: #ffffff;
- }
- #user{
-     position: relative;
-     right: 130px;
-     top: 40px;
-     color: #ffffff;
- }
+@media (max-width: 600px){
+    .login{
+        flex-direction: column;
+    }
+    .left-login > h1{
+        display: none;
+    }
+    .left-login{
+      width: 100%;
+      height: auto;  
+    }
+    .right-login{
+        width: 100%;
+        height: auto;  
+      }
+      .imagem{
+        width: 50vw;
+      }  
 }
