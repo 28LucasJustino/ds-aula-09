@@ -1,0 +1,63 @@
+@media (min-width: 1px) and (max-width: 499px){
+footer{
+    background-color: rgb(255, 0, 0);
+    width: 100vw;
+    height: 100%;
+}
+
+footer div button {      
+    background-color: rgb(255, 0, 0);
+    color: rgb(0, 0, 0);
+    font-size: 100%;
+    font-weight: 500;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;  
+}
+
+footer div button{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+}
+@media (min-width: 500px) and (max-width: 800px){
+    footer{
+        background-color: rgb(4, 0, 255);
+        width: 100vw;
+        height: 100%;
+    }
+    
+    footer div button {
+        background-color: rgb(4, 0, 255);
+        color: rgb(0, 0, 0);
+        font-size: 100%;
+        font-weight: 500;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;  
+    }
+    
+    footer div button{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    }
+    @media (min-width: 801px){
+        footer{
+            background-color: rgb(206, 95, 5);
+            width: 100vw;
+            height: 100%;
+        }
+        
+        footer div button {
+            background-color: rgb(206, 95, 5);
+            color: rgb(0, 0, 0);
+            font-size: 100%;
+            font-weight: 500;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;  
+        }
+        
+        footer div button{
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        }
