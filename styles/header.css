@@ -1,114 +1,117 @@
-body header{
-    width: 100%;
-    margin: 0;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+* {
     padding: 0;
-    
+    margin: 0;
+    font-family: "Roboto Condensed", sans-serif;
 }
 
-@media (min-width: 1px) and (max-width: 499px){
-    header{
-    background-color: rgb(255, 2, 2);
-    width: 100vw;
-    height: 20%;
-    box-shadow: 0 7px 10px 0 #a1a1a1;
-    transition: all 0.5s ease-in-out 1s;
+header {
+    background-color: #0725be;
+    box-shadow: 0px 3px 10px #464646;
 }
-    .image1{
-        width: 25%;
-        position: relative;
-        top: 25px;
-        left: 1%;
-    }
-    .buscar{
-            padding: 6px;
-            font-size: 16px;
-            border: none;
-            margin-bottom: 20px;
-            border-radius: 4px;
-            transition: all linear 160ms;
-            outline: none; 
-            position: relative;
-            bottom: 0%;
-            left: 26%;  
-    }
-    .icon1{
-        position: relative;
-        top: 0%;
-        left: 20%;
-        font-size: 20px;
-    }
-    .icon2{
-        position: relative;
-        top: 200px;
-        left: 20px;
-        font-size: 20px;
-    }
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
 }
-@media (min-width: 500px) and (max-width: 800px){
-    header{
-        background-color: rgb(4, 0, 255);
-        width: 100%;
-        height: 15%;
-        box-shadow: 0 7px 10px 0 #a1a1a1;
-        transition: all 0.5s ease-in-out 1s;
-    }
-    .image2{
-        width: 8%;
-        position: relative;
-        top: 7px;
-        left: 8px;
-    }
-    .image3{
-        width: 8%;
-        position: relative;
-        top: 7px;
-        left: 280px;
-    }
-    div input{
-        padding: 8px;
-        font-size: 20px;
-        border: 1px solid #ccc;
-        margin-bottom: 20px;
-        border-radius: 4px;
-        transition: all linear 160ms;
-        outline: none;  
-        position: relative;
-        top: 0px; 
-        left: 160px;
-    }
-    div input:hover{
-        border: 2px solid #000000;
-    }
+
+.logo {
+    display: flex;
+    align-items: center;
 }
-@media (min-width: 801px) {
-    header{
-    background-color: rgb(206, 95, 5);
-    width: 100%;
-    height: 15%;
-    box-shadow: 0 7px 10px 0 #a1a1a1;
-    transition: all 0.5s ease-in-out 1s;
+
+#log{
+    width: 110px;
 }
-.image2{
-    width: 10%;
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: #fff;
+    font-weight: 400;
+}
+div input{
+    padding: 6px;
+    font-size: 12px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    transition: all linear 160ms;
+    outline: none; 
     position: relative;
-    top: 9px;
-    left: 10px;
+    top: 40px;
+}
+.icon1{
+    position: relative;
+
+}
+.mobile-menu-icon {
+    display: none;
 }
 
-    div input{
-        padding: 17px;
-        font-size: 30px;
-        border: 1px solid #ccc;
-        margin-bottom: 20px;
-        margin-top: 5px;
-        border-radius: 4px;
-        transition: all linear 160ms;
-        outline: none;
-        position: relative;
-        top: -35px;
-        left: 200px;   
+.mobile-menu {
+    display: none;
+}
+
+@media (min-width:1px) and (max-width: 730px) {
+    .nav-bar {
+        padding: 1.5rem 4rem;
     }
-    div input:hover{
-        border: 2px solid #000000;
+    .nav-item {
+        display: none;
+    }
+    .login-button {
+        display: none;
+    }
+    #log{
+        width: 20%;
+        position: relative;
+        right: 35px;
+    }
+    .mobile-menu-icon {
+        display: block;
+    }
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        position: relative;
+        top: 38px;
+    }
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .mobile-menu .login-button {
+        display: block;
+        padding: 1rem 2rem;
+    }
+    .mobile-menu .login-button button {
+        width: 100%;
+    }
+    .open {
+        display: block;
     }
 }

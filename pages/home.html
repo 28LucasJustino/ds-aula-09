@@ -1,42 +1,94 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <link rel="stylesheet" href="./../styles/main.css">
-    <link rel="stylesheet" href="./../styles/footer.css">
-    <link rel="stylesheet" href="./../styles/header.css">
-    <script src="https://kit.fontawesome.com/c5d333bbd9.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
+    <script src="https://kit.fontawesome.com/c5d333bbd9.js" crossorigin="anonymous"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <link rel="stylesheet" href="./../styles/header.css">
+    <link rel="stylesheet" href="./../styles/footer.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Menu Responsivo</title>
 </head>
+
 <body>
     <header>
-     <nav>
-        <div>  
-            <img class="image1" src="./../assets/International_Pokémon_logo.svg.png" alt="logo1">  
-        </div>
-        <div class="buscar">
-            <input type="texto" id="inputBusca" placeholder=" buscar">
-        </div>
+        <nav class="nav-bar">
+                <img id="log" src="./../assets/senai-165.png" alt="logo">
+                <div>
+                    <input type="texto" id="inputBusca" placeholder="Buscar">
+                </div>
             <div class="icon1">
-            <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-magnifying-glass"></i>
             </div>
             <div class="icon2">
-            <i class="fa-solid fa-magnifying-glass"></i>
-                </div>
-     </nav>
-
+                <i class="fa-solid fa-house"></i>
+            </div>
+            <div class="icon3">
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="./../assets/menu_white_36dp.svg" alt="icon"></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Projetos</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
+            </ul>
+            <div class="login-button">
+                <button><a href="#">Entrar</a></button>
+            </div>
+        </div>
     </header>
 
     <main>
-       
+
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="./../assets/LC_Banner-Dsk_M1DM.png" alt="Primeiro Slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="./../assets/LC_Banner_Dsk_BDMN.png" alt="Segundo Slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="./../assets/LC_Banner_Dsk_Editora-Todo-Livro.png" alt="Terceiro Slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="./../assets/LC_Banner_Dsk_Editoras_ACDN.png" alt="Terceiro Slide">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Próximo</span>
+            </a>
+          </div>
     </main>
 
     <footer>
-<div>
-    <button>&#129045;VOLTAR PARA CIMA</button>
-</div>
+            <h1></h1>
+            <div class="footer-menu">
+                <ul>
+                    <li class="nav-item"><a href="#" class="nav-link">Romance</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Aventura</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Comedia</a></li>
+                </ul>
+                <div class="btn1">
+                    <button><a href="#">Entrar</a></button>
+                </div>
+            </div>
     </footer>
-     <script src="./../js/Poke.js"></script>
+    <script src="./../js/mobile.js"></script>
+    <script src="./../js/card.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 </html>
